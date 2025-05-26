@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rapido Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Rapido Ride Booking</h2>
+    <form id="bookingForm">
+      <label for="pickup">Pickup Location</label>
+      <input type="text" id="pickup" required>
+
+      <label for="drop">Drop Location</label>
+      <input type="text" id="drop" required>
+
+      <label for="rideType">Ride Type</label>
+      <select id="rideType" required>
+        <option value="">--Select--</option>
+        <option value="Bike">Bike</option>
+        <option value="Auto">Auto</option>
+      </select>
+
+      <button type="submit">Calculate Fare</button>
+    </form>
+
+    <div class="result" id="result" style="display: none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
